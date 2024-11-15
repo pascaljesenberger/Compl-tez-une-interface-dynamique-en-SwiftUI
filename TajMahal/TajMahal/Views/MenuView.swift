@@ -7,14 +7,54 @@
 
 import SwiftUI
 
-// Menu sous forme de liste
 struct MenuView: View {
-    // Référence vers le view model qui permet d'accéder aux tableaux d'entrées et de plats du menu
     let viewModel: ViewModel = ViewModel()
     
     var body: some View {
-        List {
-            // À completer
+        NavigationView {
+            ZStack {
+                Color("BackGroundColor")
+                    .ignoresSafeArea()
+                ScrollView {
+                    VStack {
+                        Text("Menu")
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.center)
+                            .font(.custom("PlusJakartaSans-Bold", size: 18))
+                        
+                        VStack(alignment: .leading) {
+                            Text("Entrées")
+                                .font(.custom("PlusJakartaSans-Bold", size: 14))
+                                .foregroundColor(Color("CustomDarkGray"))
+                            
+                            ForEach(viewModel.apetizerArray, id: \.name) { dish in
+                                NavigationLink {
+                                    DishDetailView(dish: dish)
+                                } label: {
+                                    DishRow(image: dish.imageName, text: dish.name, detailText: dish.description, spiceLevel: dish.spiceLevel)
+                                }
+                            }
+                        }
+                        .padding(.bottom)
+                        
+                        VStack(alignment: .leading) {
+                            Text("Plats Principaux")
+                                .font(.custom("PlusJakartaSans-Bold", size: 14))
+                                .foregroundColor(Color("CustomDarkGray"))
+                            
+                            ForEach(viewModel.mainCourseArray, id: \.name) { dish in
+                                NavigationLink {
+                                    DishDetailView(dish: dish)
+                                } label: {
+                                    DishRow(image: dish.imageName, text: dish.name, detailText: dish.description, spiceLevel: dish.spiceLevel)
+                                }
+                            }
+                        }
+                        .padding(.bottom)
+                    }
+                    .padding(.horizontal)
+                }
+            }
         }
     }
 }
