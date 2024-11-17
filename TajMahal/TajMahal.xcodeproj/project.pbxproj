@@ -14,6 +14,15 @@
 		42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E9DCB42AF11138007CE7D0 /* Preview Assets.xcassets */; };
 		42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */; };
 		42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9DCC12AF117AE007CE7D0 /* MenuView.swift */; };
+		5C19198D2CE6CC870071165B /* RestaurantDescriptionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C19198C2CE6CC870071165B /* RestaurantDescriptionText.swift */; };
+		5C1919972CE78AED0071165B /* PlusJakartaSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C1919962CE78AED0071165B /* PlusJakartaSans-Bold.ttf */; };
+		5C19199B2CE78B890071165B /* PlusJakartaSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C19199A2CE78B890071165B /* PlusJakartaSans-SemiBold.ttf */; };
+		5C19199D2CE78C380071165B /* PlusJakartaSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C19199C2CE78C370071165B /* PlusJakartaSans-Regular.ttf */; };
+		5C1919A22CE78E770071165B /* DishRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A12CE78E770071165B /* DishRow.swift */; };
+		5C1919A42CE790470071165B /* SpiceLevelIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A32CE790470071165B /* SpiceLevelIndicator.swift */; };
+		5C1919A62CE7A7190071165B /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A52CE7A7190071165B /* DishDetailView.swift */; };
+		5C1919A82CE94A470071165B /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A72CE94A470071165B /* AppFonts.swift */; };
+		5C1919AA2CE94ABD0071165B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A92CE94ABD0071165B /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +35,15 @@
 		42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		42E9DCC02AF11662007CE7D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		42E9DCC12AF117AE007CE7D0 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		5C19198C2CE6CC870071165B /* RestaurantDescriptionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDescriptionText.swift; sourceTree = "<group>"; };
+		5C1919962CE78AED0071165B /* PlusJakartaSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Bold.ttf"; sourceTree = "<group>"; };
+		5C19199A2CE78B890071165B /* PlusJakartaSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		5C19199C2CE78C370071165B /* PlusJakartaSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PlusJakartaSans-Regular.ttf"; sourceTree = "<group>"; };
+		5C1919A12CE78E770071165B /* DishRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishRow.swift; sourceTree = "<group>"; };
+		5C1919A32CE790470071165B /* SpiceLevelIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceLevelIndicator.swift; sourceTree = "<group>"; };
+		5C1919A52CE7A7190071165B /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
+		5C1919A72CE94A470071165B /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		5C1919A92CE94ABD0071165B /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +78,8 @@
 			children = (
 				42E9DCC02AF11662007CE7D0 /* Info.plist */,
 				42E9DCBB2AF113D1007CE7D0 /* Views */,
+				5C1919912CE6CF620071165B /* Components */,
+				5C19199F2CE78DDD0071165B /* Fonts */,
 				42E9DCAD2AF11136007CE7D0 /* TajMahalApp.swift */,
 				42E9DCB12AF11138007CE7D0 /* Assets.xcassets */,
 				42E9DCB32AF11138007CE7D0 /* Preview Content */,
@@ -82,8 +102,31 @@
 			children = (
 				42E9DCBE2AF11439007CE7D0 /* WelcomeView.swift */,
 				42E9DCC12AF117AE007CE7D0 /* MenuView.swift */,
+				5C1919A52CE7A7190071165B /* DishDetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		5C1919912CE6CF620071165B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				5C1919A92CE94ABD0071165B /* AppColors.swift */,
+				5C1919A72CE94A470071165B /* AppFonts.swift */,
+				5C19198C2CE6CC870071165B /* RestaurantDescriptionText.swift */,
+				5C1919A12CE78E770071165B /* DishRow.swift */,
+				5C1919A32CE790470071165B /* SpiceLevelIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		5C19199F2CE78DDD0071165B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				5C1919962CE78AED0071165B /* PlusJakartaSans-Bold.ttf */,
+				5C19199A2CE78B890071165B /* PlusJakartaSans-SemiBold.ttf */,
+				5C19199C2CE78C370071165B /* PlusJakartaSans-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,8 +187,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C1919972CE78AED0071165B /* PlusJakartaSans-Bold.ttf in Resources */,
 				42E9DCB52AF11138007CE7D0 /* Preview Assets.xcassets in Resources */,
 				42E9DCB22AF11138007CE7D0 /* Assets.xcassets in Resources */,
+				5C19199D2CE78C380071165B /* PlusJakartaSans-Regular.ttf in Resources */,
+				5C19199B2CE78B890071165B /* PlusJakartaSans-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,11 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C19198D2CE6CC870071165B /* RestaurantDescriptionText.swift in Sources */,
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
+				5C1919A62CE7A7190071165B /* DishDetailView.swift in Sources */,
+				5C1919AA2CE94ABD0071165B /* AppColors.swift in Sources */,
+				5C1919A22CE78E770071165B /* DishRow.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
+				5C1919A82CE94A470071165B /* AppFonts.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
+				5C1919A42CE790470071165B /* SpiceLevelIndicator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
