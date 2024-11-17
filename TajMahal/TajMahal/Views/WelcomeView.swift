@@ -20,12 +20,12 @@ struct WelcomeView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text("Restaurant Indien")
-                            .foregroundColor(Color("CustomDarkGray"))
-                            .font(.custom("PlusJakartaSans-Regular", size: 12))
+                            .foregroundColor(AppColors.darkGray)
+                            .font(AppFonts.regular(size: 12))
                         
                         Text("Taj Mahal")
-                            .foregroundColor(.black)
-                            .font(.custom("PlusJakartaSans-Bold", size: 18))
+                            .foregroundColor(AppColors.veryDarkGray)
+                            .font(AppFonts.bold(size: 18))
                     }
                     
                     Spacer()
@@ -33,7 +33,7 @@ struct WelcomeView: View {
                     Image("Logo")
                         .resizable()
                         .renderingMode(.template)
-                        .foregroundColor(Color("CustomGray"))
+                        .foregroundColor(AppColors.gray)
                         .frame(width: 40, height: 40)
                 }
                 .padding(.vertical, 24)
@@ -48,14 +48,15 @@ struct WelcomeView: View {
                 
                 Spacer()
                 
+                // Lien vers page du menu
                 NavigationLink {
                     MenuView()
                 } label : {
                     Text("Accéder au menu")
-                        .foregroundColor(.white)
-                        .font(.custom("PlusJakartaSans-Bold", size: 16))
+                        .foregroundColor(AppColors.white)
+                        .font(AppFonts.bold(size: 16))
                         .frame(maxWidth: .infinity, maxHeight: 40)
-                        .background(Color("CustomRed"))
+                        .background(AppColors.red)
                         .cornerRadius(10)
                 }
             }

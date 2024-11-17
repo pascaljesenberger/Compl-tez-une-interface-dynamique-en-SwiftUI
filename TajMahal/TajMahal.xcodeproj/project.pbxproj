@@ -21,6 +21,8 @@
 		5C1919A22CE78E770071165B /* DishRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A12CE78E770071165B /* DishRow.swift */; };
 		5C1919A42CE790470071165B /* SpiceLevelIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A32CE790470071165B /* SpiceLevelIndicator.swift */; };
 		5C1919A62CE7A7190071165B /* DishDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A52CE7A7190071165B /* DishDetailView.swift */; };
+		5C1919A82CE94A470071165B /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A72CE94A470071165B /* AppFonts.swift */; };
+		5C1919AA2CE94ABD0071165B /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1919A92CE94ABD0071165B /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		5C1919A12CE78E770071165B /* DishRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishRow.swift; sourceTree = "<group>"; };
 		5C1919A32CE790470071165B /* SpiceLevelIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceLevelIndicator.swift; sourceTree = "<group>"; };
 		5C1919A52CE7A7190071165B /* DishDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailView.swift; sourceTree = "<group>"; };
+		5C1919A72CE94A470071165B /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		5C1919A92CE94ABD0071165B /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,8 @@
 		5C1919912CE6CF620071165B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				5C1919A92CE94ABD0071165B /* AppColors.swift */,
+				5C1919A72CE94A470071165B /* AppFonts.swift */,
 				5C19198C2CE6CC870071165B /* RestaurantDescriptionText.swift */,
 				5C1919A12CE78E770071165B /* DishRow.swift */,
 				5C1919A32CE790470071165B /* SpiceLevelIndicator.swift */,
@@ -200,8 +206,10 @@
 				428D2B532AFA882700BBA4F5 /* ViewModel.swift in Sources */,
 				42E9DCBF2AF11439007CE7D0 /* WelcomeView.swift in Sources */,
 				5C1919A62CE7A7190071165B /* DishDetailView.swift in Sources */,
+				5C1919AA2CE94ABD0071165B /* AppColors.swift in Sources */,
 				5C1919A22CE78E770071165B /* DishRow.swift in Sources */,
 				42E9DCC22AF117AE007CE7D0 /* MenuView.swift in Sources */,
+				5C1919A82CE94A470071165B /* AppFonts.swift in Sources */,
 				42E9DCAE2AF11136007CE7D0 /* TajMahalApp.swift in Sources */,
 				428D2B512AFA851900BBA4F5 /* Model.swift in Sources */,
 				5C1919A42CE790470071165B /* SpiceLevelIndicator.swift in Sources */,

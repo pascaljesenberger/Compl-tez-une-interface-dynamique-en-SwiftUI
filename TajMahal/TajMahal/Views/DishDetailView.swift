@@ -8,56 +8,76 @@
 import SwiftUI
 
 struct DishDetailView: View {
+    @Environment(\.presentationMode) private var presentationMode: Binding<PresentationMode>
+    
+    // Déclaration de la constante dish qui contient les informations du plat
     let dish: Dish
     
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 16) {
-                Text(dish.name)
-                    .font(.custom("PlusJakartaSans-Bold", size: 18))
-                    .foregroundColor(.black)
                 
                 ZStack(alignment: .topTrailing) {
+                    
+                    // Image du plat avec l'indicateur de piquant par dessus
                     Image(dish.imageName)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(maxWidth: .infinity)
                         .cornerRadius(16)
                     
-                    SpiceLevelIndicator(spiceLevel: dish.spiceLevel)
+                    SpiceLevelIndicator(spiceLevel: dish.spiceLevel, width: 14, height: 14)
                         .background(
                             RoundedRectangle(cornerRadius: 100)
                                 .frame(width: 74, height: 22)
-                                .foregroundColor(.white)
+                                .foregroundColor(AppColors.white)
                         )
-                        .padding(24)
+                        .padding(.horizontal, 24)
+                        .padding(.vertical, 16)
                 }
+                .padding(.bottom, 16)
                 
+                // Allergènes du plat
                 Text("Allergènes:")
-                    .font(.custom("PlusJakartaSans-Bold", size: 12))
-                    .foregroundColor(Color("CustomDarkGray"))
+                    .font(AppFonts.bold(size: 12))
+                    .foregroundColor(AppColors.darkGray)
                 
                 Text(dish.allergens)
-                    .font(.custom("PlusJakartaSans-Regular", size: 12))
-                    .foregroundColor(Color("CustomDarkGray"))
+                    .font(AppFonts.regular(size: 12))
+                    .foregroundColor(AppColors.darkGray)
                 
                 Divider()
-                    .foregroundColor(Color("CustomLightGray"))
+                    .foregroundColor(AppColors.lightGray)
                 
+                // Ingrédients du plat
                 Text("Ingrédients:")
-                    .font(.custom("PlusJakartaSans-Bold", size: 12))
-                    .foregroundColor(Color("CustomDarkGray"))
+                    .font(AppFonts.bold(size: 12))
+                    .foregroundColor(AppColors.darkGray)
                 
                 Text(dish.ingredients)
-                    .font(.custom("PlusJakartaSans-Regular", size: 12))
-                    .foregroundColor(Color("CustomDarkGray"))
+                    .font(AppFonts.regular(size: 12))
+                    .foregroundColor(AppColors.darkGray)
                 
             }
             .padding()
+            .padding(.top, 0)
         }
+        
+        // Barre de navigation avec le nom du plat
+        .navigationBarBackButtonHidden(true)
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(action: {
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(AppColors.veryDarkGray)
+                    
+                    Text(dish.name)
+                        .foregroundColor(AppColors.veryDarkGray)
+                        .font(AppFonts.bold(size: 18))
+                }
+            }
         }
-}
-
-#Preview {
-    DishDetailView(dish: Dish(name: "Chicken Tikka Masala", description: "Poulet mariné, grillé et servi dans une sauce masala", allergens: "Lait, yaourt, beurre clarifié (ghee), crème fraîche, crème de coco, ail, oignon", ingredients: "Huile, beurre clarifié (ghee), oignon, ail, gingembre, poudre de curcuma, poudre de cumin, poudre de coriandre, piment en poudre, tomates en purée, crème fraîche, crème de coco, sel, coriandre fraîche", spiceLevel: .medium, imageName: "Tikka Masala"))
+    }
 }
